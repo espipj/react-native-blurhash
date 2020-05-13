@@ -1,14 +1,6 @@
 import React from 'react';
-import {requireNativeComponent} from 'react-native';
+import RNBlurhash from './RNBlurhash';
 
-interface RNBlurhash {
-  hashImg: string;
-  width: number;
-  height: number;
-  punch: number;
-  resolutionX: number;
-  resolutionY: number;
-}
 interface BlurhashProps {
   hash: string;
   width?: number;
@@ -17,7 +9,6 @@ interface BlurhashProps {
   resolutionX?: number;
   resolutionY?: number;
 }
-const RNBlurhash = requireNativeComponent<RNBlurhash>('Blurhash');
 const Blurhash: React.FunctionComponent<BlurhashProps> = ({
   hash,
   width = 100,

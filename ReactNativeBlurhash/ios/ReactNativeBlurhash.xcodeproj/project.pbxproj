@@ -20,6 +20,11 @@
 		577555A8AC67F9F5BC9D7A10 /* libPods-ReactNativeBlurhash-ReactNativeBlurhashTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490E0BADF8A1479210044474 /* libPods-ReactNativeBlurhash-ReactNativeBlurhashTests.a */; };
 		763B70DF4C5FB0724454EB1A /* libPods-ReactNativeBlurhash-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B29FD0307092D2A185E31 /* libPods-ReactNativeBlurhash-tvOS.a */; };
 		802EEDBCF50FF872E394B7FE /* libPods-ReactNativeBlurhash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD618635778A1A4D1EAF80 /* libPods-ReactNativeBlurhash.a */; };
+		D4E20600246C066A00EAA79D /* BlurhashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E205FF246C066A00EAA79D /* BlurhashView.swift */; };
+		D4E20602246C06D900EAA79D /* Blurhash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E20601246C06D900EAA79D /* Blurhash.swift */; };
+		D4E20604246C073200EAA79D /* Blurhash.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E20603246C073200EAA79D /* Blurhash.m */; };
+		D4E20606246C34C000EAA79D /* BlurHashDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E20605246C34C000EAA79D /* BlurHashDecode.swift */; };
+		D4E20608246C34CB00EAA79D /* BlurHashEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E20607246C34CB00EAA79D /* BlurHashEncode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,12 @@
 		A527E1ADA35D91F1BE6EBD48 /* Pods-ReactNativeBlurhash-ReactNativeBlurhashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBlurhash-ReactNativeBlurhashTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBlurhash-ReactNativeBlurhashTests/Pods-ReactNativeBlurhash-ReactNativeBlurhashTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC0B29FD0307092D2A185E31 /* libPods-ReactNativeBlurhash-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeBlurhash-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F2D4701324C5BC571BA220 /* Pods-ReactNativeBlurhash-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBlurhash-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeBlurhash-tvOSTests/Pods-ReactNativeBlurhash-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4E205FE246C066A00EAA79D /* ReactNativeBlurhash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeBlurhash-Bridging-Header.h"; sourceTree = "<group>"; };
+		D4E205FF246C066A00EAA79D /* BlurhashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurhashView.swift; sourceTree = "<group>"; };
+		D4E20601246C06D900EAA79D /* Blurhash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blurhash.swift; sourceTree = "<group>"; };
+		D4E20603246C073200EAA79D /* Blurhash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blurhash.m; sourceTree = "<group>"; };
+		D4E20605246C34C000EAA79D /* BlurHashDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurHashDecode.swift; sourceTree = "<group>"; };
+		D4E20607246C34CB00EAA79D /* BlurHashEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurHashEncode.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FEB6968514B0AC4B1E2F4024 /* Pods-ReactNativeBlurhash-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBlurhash-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBlurhash-tvOS/Pods-ReactNativeBlurhash-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,12 +170,18 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D4E20605246C34C000EAA79D /* BlurHashDecode.swift */,
+				D4E20607246C34CB00EAA79D /* BlurHashEncode.swift */,
+				D4E20603246C073200EAA79D /* Blurhash.m */,
+				D4E20601246C06D900EAA79D /* Blurhash.swift */,
+				D4E205FF246C066A00EAA79D /* BlurhashView.swift */,
 				13B07FAE1A68108700A75B9A /* ReactNativeBlurhash */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeBlurhashTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A6686DD5DDBA258B8132B751 /* Pods */,
+				D4E205FE246C066A00EAA79D /* ReactNativeBlurhash-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -291,7 +308,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1020;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -529,7 +546,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E20608246C34CB00EAA79D /* BlurHashEncode.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D4E20600246C066A00EAA79D /* BlurhashView.swift in Sources */,
+				D4E20604246C073200EAA79D /* Blurhash.m in Sources */,
+				D4E20602246C06D900EAA79D /* Blurhash.swift in Sources */,
+				D4E20606246C34C000EAA79D /* BlurHashDecode.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,6 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeBlurhash;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeBlurhash-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -667,6 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeBlurhash;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeBlurhash-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
